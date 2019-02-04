@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.5.37, for Win32 (AMD64)
 --
--- Host: 127.0.0.1    Database: war_world
+-- Host: 127.0.0.1    Database: ror-world
 -- ------------------------------------------------------
--- Server version	5.5.52
+-- Server version	8.0.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,7 +28,7 @@ CREATE TABLE `battlefront_status` (
   `ActiveRegionOrZone` int(11) DEFAULT NULL,
   `ControlingRealm` int(11) DEFAULT NULL,
   PRIMARY KEY (`RegionId`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,6 @@ CREATE TABLE `battlefront_status` (
 
 LOCK TABLES `battlefront_status` WRITE;
 /*!40000 ALTER TABLE `battlefront_status` DISABLE KEYS */;
-INSERT INTO `battlefront_status` VALUES (11,1,0,0);
 /*!40000 ALTER TABLE `battlefront_status` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-27 12:40:05
+-- Dump completed on 2019-02-04  1:04:04

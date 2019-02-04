@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.5.37, for Win32 (AMD64)
 --
--- Host: 127.0.0.1    Database: war_world
+-- Host: 127.0.0.1    Database: ror-world
 -- ------------------------------------------------------
--- Server version	5.5.52
+-- Server version	8.0.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,8 +23,8 @@ DROP TABLE IF EXISTS `quests_creature_starter`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `quests_creature_starter` (
-  `Entry` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `CreatureID` int(10) unsigned NOT NULL DEFAULT '0',
+  `Entry` smallint(5) unsigned NOT NULL,
+  `CreatureID` int(10) unsigned NOT NULL,
   PRIMARY KEY (`Entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -4575,4 +4575,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-27 12:40:13
+-- Dump completed on 2019-02-04  1:04:15

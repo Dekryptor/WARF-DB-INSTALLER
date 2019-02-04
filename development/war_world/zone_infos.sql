@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.5.37, for Win32 (AMD64)
 --
--- Host: 127.0.0.1    Database: war_world
+-- Host: 127.0.0.1    Database: ror-world
 -- ------------------------------------------------------
--- Server version	5.5.52
+-- Server version	8.0.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -110,8 +110,8 @@ INSERT INTO `zone_infos` VALUES (1,'Marshes of Madness',11,20,0,2,500,12,252,210
 (177,'Warpblade Tunnels',40,40,0,4,0,177,376,48,0,0,0),
 (179,'Tomb of the Vulture Lord',31,40,0,4,0,179,72,60,0,0,0),
 (191,'Necropolis of Zandri',31,40,0,4,0,9,48,364,100,0,1),
-(195,'Bloodwrought Enclave',40,10,0,4,0,195,376,248,0,0,0),
-(196,'Bilerot Burrow',40,20,0,4,0,196,360,248,0,0,0),
+(195,'Bloodwrought Enclave',10,40,0,4,0,195,376,248,0,0,0),
+(196,'Bilerot Burrow',20,40,0,4,0,196,360,248,0,0,0),
 (200,'The Blighted Isle',1,30,0,1,50,3,248,248,3,1,0),
 (201,'The Shadowlands',11,40,0,2,500,15,200,296,3,1,0),
 (202,'Avelorn',21,40,0,3,2000,16,344,344,3,1,0),
@@ -185,7 +185,25 @@ INSERT INTO `zone_infos` VALUES (1,'Marshes of Madness',11,20,0,2,500,12,252,210
 (15,'Marshes South Dangerous Territory',1,10,0,0,0,12,252,226,0,0,1),
 (16,'Dangerous Territory',1,10,0,0,0,2,318,202,0,0,1),
 (17,'Dangerous Territory',1,10,0,0,0,2,350,202,0,0,1),
-(20,'Dangerous Territory',1,10,0,0,0,2,350,250,0,0,1);
+(20,'Dangerous Territory',1,10,0,0,0,2,350,250,0,0,1),
+(21,'Dangerous Territory',1,10,0,0,0,2,318,250,0,0,1),
+(22,'Dangerous Territory',1,10,0,0,0,10,286,202,0,0,1),
+(23,'Dangerous Territory',1,10,0,0,0,10,286,186,0,0,1),
+(24,'Dangerous Territory',1,10,0,0,0,10,302,186,0,0,1),
+(25,'Dangerous Territory',1,10,0,0,0,12,268,210,0,0,1),
+(32,'The Ironclad',1,10,0,2,0,32,72,40,0,0,1),
+(41,'Altdorf War Quarters',31,40,0,3,0,41,72,60,0,0,1),
+(42,'The Undercroft',1,40,0,3,0,42,72,120,0,0,1),
+(154,'Warpblade 2',1,10,0,4,0,154,40,40,0,0,1),
+(157,'Temple of Sigmar',1,10,0,4,0,157,40,40,0,0,1),
+(158,'The Monolith',1,10,0,4,0,158,40,40,0,0,1),
+(159,'The Sacellum',1,10,0,4,0,159,40,40,0,0,1),
+(167,'The Inevitable City Contested',1,10,0,4,0,167,24,56,0,0,1),
+(170,'Altdorf Palace',31,40,0,4,0,170,8,152,0,0,1),
+(190,'Bright Wizard College 2',31,40,0,4,0,7,16,380,0,0,1),
+(293,'RvR Keep Test',1,10,0,1,0,5,248,216,0,0,1),
+(301,'NW TK Scenery',0,0,0,0,0,9,32,348,0,0,0),
+(450,'Blood Hunt Instance 1',0,0,0,0,0,5,16,16,0,0,0);
 /*!40000 ALTER TABLE `zone_infos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -198,4 +216,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-27 12:40:15
+-- Dump completed on 2019-02-04  1:04:17

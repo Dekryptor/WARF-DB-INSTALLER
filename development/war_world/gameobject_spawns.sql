@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.5.37, for Win32 (AMD64)
 --
--- Host: 127.0.0.1    Database: war_world
+-- Host: 127.0.0.1    Database: ror-world
 -- ------------------------------------------------------
--- Server version	5.5.52
+-- Server version	8.0.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `gameobject_spawns`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `gameobject_spawns` (
-  `Guid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `Guid` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `Entry` int(10) unsigned NOT NULL,
   `ZoneId` smallint(5) unsigned NOT NULL DEFAULT '0',
   `WorldX` int(11) NOT NULL DEFAULT '0',
@@ -22385,4 +22385,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-27 12:40:09
+-- Dump completed on 2019-02-04  1:04:09

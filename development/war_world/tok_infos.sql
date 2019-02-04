@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.5.37, for Win32 (AMD64)
 --
--- Host: 127.0.0.1    Database: war_world
+-- Host: 127.0.0.1    Database: ror-world
 -- ------------------------------------------------------
--- Server version	5.5.52
+-- Server version	8.0.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -24,12 +24,12 @@ DROP TABLE IF EXISTS `tok_infos`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tok_infos` (
   `Entry` smallint(5) unsigned NOT NULL,
-  `Name` varchar(255) NOT NULL DEFAULT '',
-  `Xp` int(10) unsigned NOT NULL DEFAULT '0',
-  `Section` int(10) unsigned NOT NULL DEFAULT '0',
-  `Index` int(10) unsigned NOT NULL DEFAULT '0',
-  `Flag` int(10) unsigned NOT NULL DEFAULT '0',
-  `EventName` varchar(255) NOT NULL DEFAULT '',
+  `Name` varchar(255) DEFAULT '',
+  `Xp` int(10) unsigned DEFAULT '0',
+  `Section` int(10) unsigned DEFAULT '0',
+  `Index` int(10) unsigned DEFAULT '0',
+  `Flag` int(10) unsigned DEFAULT '0',
+  `EventName` varchar(255) DEFAULT '',
   `Rewards` int(10) unsigned DEFAULT NULL,
   `Realm` tinyint(3) unsigned DEFAULT NULL,
   PRIMARY KEY (`Entry`)
@@ -12053,4 +12053,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-27 12:40:15
+-- Dump completed on 2019-02-04  1:04:17

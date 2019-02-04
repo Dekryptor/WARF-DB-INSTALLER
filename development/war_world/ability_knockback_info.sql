@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.5.37, for Win32 (AMD64)
 --
--- Host: 127.0.0.1    Database: war_world
+-- Host: 127.0.0.1    Database: ror-world
 -- ------------------------------------------------------
--- Server version	5.5.52
+-- Server version	8.0.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -24,14 +24,14 @@ DROP TABLE IF EXISTS `ability_knockback_info`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `ability_knockback_info` (
   `Entry` smallint(5) unsigned NOT NULL,
-  `Id` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `Id` smallint(5) unsigned NOT NULL,
   `Angle` tinyint(3) unsigned DEFAULT NULL,
   `Power` smallint(5) unsigned DEFAULT NULL,
   `RangeExtension` smallint(5) unsigned DEFAULT NULL,
   `GravMultiplier` tinyint(3) unsigned DEFAULT NULL,
   `Unk` tinyint(3) unsigned DEFAULT NULL,
   PRIMARY KEY (`Entry`,`Id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,48 +40,6 @@ CREATE TABLE `ability_knockback_info` (
 
 LOCK TABLES `ability_knockback_info` WRITE;
 /*!40000 ALTER TABLE `ability_knockback_info` DISABLE KEYS */;
-INSERT INTO `ability_knockback_info` VALUES (5,0,50,600,NULL,2,NULL),
-(5,1,75,750,NULL,2,NULL),
-(439,0,50,600,NULL,2,NULL),
-(648,0,50,600,NULL,2,NULL),
-(670,0,50,600,NULL,2,NULL),
-(672,0,45,600,NULL,2,NULL),
-(1365,0,50,800,NULL,2,NULL),
-(1407,0,50,600,NULL,2,NULL),
-(1531,0,50,600,NULL,2,NULL),
-(1540,0,50,600,NULL,2,NULL),
-(1561,0,50,600,NULL,2,NULL),
-(1605,0,50,600,NULL,2,NULL),
-(1680,0,45,600,NULL,2,NULL),
-(1716,0,45,600,NULL,2,NULL),
-(1831,0,45,600,NULL,2,NULL),
-(1914,0,50,600,NULL,2,NULL),
-(1929,0,50,600,NULL,2,NULL),
-(1971,0,45,600,NULL,2,NULL),
-(8017,0,50,600,NULL,2,NULL),
-(8017,1,70,600,120,1,NULL),
-(8094,0,45,600,NULL,2,NULL),
-(8189,0,45,600,NULL,2,NULL),
-(8254,0,45,600,NULL,2,NULL),
-(8329,0,50,600,NULL,2,NULL),
-(8329,1,72,600,120,1,NULL),
-(8483,0,50,600,NULL,2,NULL),
-(8559,0,50,600,NULL,2,NULL),
-(8579,0,65,450,NULL,2,NULL),
-(9012,0,45,600,NULL,2,NULL),
-(9049,0,45,700,NULL,2,NULL),
-(9074,0,40,950,NULL,2,NULL),
-(9092,0,45,600,NULL,2,NULL),
-(9255,0,50,600,NULL,2,NULL),
-(9266,0,50,600,NULL,2,NULL),
-(9304,0,45,600,NULL,2,NULL),
-(9328,0,45,600,NULL,2,NULL),
-(9328,1,50,800,NULL,2,NULL),
-(9328,2,40,950,NULL,2,NULL),
-(9381,0,45,600,NULL,2,NULL),
-(9396,0,45,600,NULL,2,NULL),
-(9514,0,45,600,NULL,2,NULL),
-(9564,0,50,600,NULL,2,NULL);
 /*!40000 ALTER TABLE `ability_knockback_info` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -94,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-27 12:40:04
+-- Dump completed on 2019-02-04  1:04:04
